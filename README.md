@@ -125,3 +125,19 @@ bool var; var = true; means to take the whiteboard named "var", erase its conten
   * Call an "update" function in every loop, which reads the state of the pin, determines if it's being held down for a long time, automatically debounces...
   * If hasChanged, then switch.
   * Include a "reference library" of classes that manage this kind of thing.
+  
+* Additional content to cover: tutorials explaining,
+  * Variable lifetime.
+     * For static, global, and local variables.
+  * const qualification
+     * A form of defensive programming.
+     * Can override const using const_cast
+  * Arrays
+  * Pointers and memory (thinking of memory as being a "really big array" and pointers as being indices into that array)
+  * Pointer arithmetic (with arrays)
+  * Lvalue references (as being like "permanently dereferenced pointers")
+  * The difference between "declarations" and "definitions", the "one definition" rule
+  * Header files and libraries
+    * This is something that the Arduino IDE intentionally tries to simplify.
+    * Translation units, header files
+
