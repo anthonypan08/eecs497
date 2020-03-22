@@ -108,3 +108,20 @@ bool var; var = true; means to take the whiteboard named "var", erase its conten
     * What if we wanted to change the original whiteboard? Then would pass a pointer or a reference. Show what this would look like.
     * This is a very important topic that we will talk about later.
   * Explain return values.
+  
+* Mention that this would get annoying with a lot of buttons; setting several global variables, etc.
+  * Wouldn't it be nice to group these related variables together?
+  * Introduce structs; show how to declare a struct to store "was last pressed at this time" (ButtonPress?).
+  * Rewrite code to use the struct rather than global variables.
+  * Am repeating code to populate the struct.
+  * Write a function: takes in a parameter by reference, the struct, and sets its values.
+  * Note: function overloading, talk about how we could also write functions with the same name that take different parameters
+  * We're still repeating the if check, though. Write a function: takes in a parameter (the ButtonPress struct) and a debounce interval,   * and does the debounce check.
+  * Code looks simpler!
+  * Make it even more simple: demonstrate how to write member functions (for the struct).
+  * Can be invoked on any struct instance, and it'll be passed as an "implicit" parameter called this.
+* Elaboration: note that, if we were to hold the button down, it would toggle on-and-off after each debounce interval. How might we fix this so the button is a "true" toggle-switch?
+  * Example: robust ButtonPress struct, with constructor. Sets up a pin in its constructor.
+  * Call an "update" function in every loop, which reads the state of the pin, determines if it's being held down for a long time, automatically debounces...
+  * If hasChanged, then switch.
+  * Include a "reference library" of classes that manage this kind of thing.
