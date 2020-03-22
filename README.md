@@ -141,3 +141,23 @@ bool var; var = true; means to take the whiteboard named "var", erase its conten
     * This is something that the Arduino IDE intentionally tries to simplify.
     * Translation units, header files
 
+## Arduino-specific Tutorials (more on 2) and 4) )
+* Specific, guided tutorials of how to build particular sensors using an Arduino. Include references to git, so that they can learn to "save their progress".
+* Weather station that logs to a microSD card
+* The same, but with an LED readout and the ability to control it with buttons
+* The same, but with Lots more components
+* The same, but with INTERRUPT HANDLERS!
+  * Low power, sleep mode
+  * Attaching interrupt handlers
+  * Code atomicity and the volatile keyword
+  
+## Other stuff (bits of 3), and more on 2) )
+* Common mistakes
+* Arduino Sketch is literally C++, but without the standard library.
+  * Arduinos are HEAVILY memory constrained.
+  * It's possible to develop sketches using full-fledged IDEs, like Eclipse
+* More advanced OOP techniques:
+   * Writing destructors (what if we wanted to configure a pin as read-only, only until the object is destroyed...)
+   * Copy-constructors, copy-assignment, and how to disable them if you don't want them
+   * (Maybe?) how to "move" variable values from place-to-place (REALLY don't want to talk about dynamic memory allocation).
+   * Provide an std::move implementation; describe it as being Evil, and just something to include from a header file.
