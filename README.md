@@ -84,3 +84,27 @@ bool var; var = true; means to take the whiteboard named "var", erase its conten
 * Explain if statements.
 * Explain the setup() and loop() functions.
 
+* Explain debouncing.
+  * Notice that, without debouncing, the light doesn't just toggle on or off.
+  * Demonstate print-statement debugging with Serial.write; note that when we press the button, we see multiple "light switched!" print statements even when we only click the button once.
+  * One solution (debouncing): remember the last time the button was pushed, and don't switch the LED if the button is on, but had been already been pressed <100 ms ago.
+
+* Segue into a long tutorial talking about C/C++ syntax and semantics.
+  * The difference between global and local variables.
+  * Legal C++ identifiers (can't start with a number, can't be a reserved word, etc.).
+  * The concept of a "variable scope" (what it is, how it's literally defined with curly braces).
+  * Can't redeclare a local variable with the same name in the same scope (compilation errors).
+  * Can "hide" a name from the outer scope by declaring another one with the same name.
+  * Run through a few examples step-by-step, with diagrams.
+  * Explain function calls.
+  * Talked before about reading values into variables.
+  * Can "do work" and read the result of doing that work. That's what digitalRead() does.
+  * Going back to the "writing a recipe" metaphor, since we're (generally) writing very complicated (or at least, very detailed) recipes, it might be helpful to create "mini-recipes" that we could "re-use" throughout the recipe: like, "crack an egg into a container".
+  * Show an example of a function that returns the smaller of two numbers.
+  * Talk about how the function signature basically declares variables.
+  * Can read from them and write into them.
+    * What happens if we write into them?
+    * Whiteboard metaphor: we erase and overwrite the "function's parameter whiteboard", but not the whiteboard from which it was copied.     * Passed in the value of the caller's variable, "pass-by-value".
+    * What if we wanted to change the original whiteboard? Then would pass a pointer or a reference. Show what this would look like.
+    * This is a very important topic that we will talk about later.
+  * Explain return values.
