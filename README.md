@@ -53,4 +53,17 @@ Include a link to [this video](https://www.youtube.com/watch?v=nL34zDTPkcs), as 
   * Explain how they're laid out, how they're connected.
   * Draw out some diagrams in Adobe Illustrator or something
 
+## For 2) Arduino Sketches and 4) Debugging
+### Programming in C++
+
+* Computer code analogy: a very literal-minded and methodical cook following a multi-step recipe.
+  * Example recipe would somehow incorporate, "And repeat steps 4-6 until...", which we could later use to introduce loops.
+("If the egg white turns purple...(?)" to introduce if-statements.)
+  * Cook has "no common sense": if a typo/misprint/coffee stain covers up the "until...", cook will repeat 4-6 forever.
+  * If Step 7 says "take the container from the previous step and add bleach" back when Step 6 said "pull the container out of the oven; it will now be dirty," but then a Step 6.5 gets added that says "retrieve a bottle of ammonia" without Step 7 being rewritten, Bad Things will happen.
+  * Implications:
+    * Good for delegating tasks to be done by other people.
+    * Requires that you understand the task very thoroughly.
+    * Minor mistakes can cause big problems in unexpected ways (the recipe was supposed to make a cake but somehow the whole house filled with chloramine gas!?).
+
 
