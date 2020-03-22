@@ -66,4 +66,21 @@ Include a link to [this video](https://www.youtube.com/watch?v=nL34zDTPkcs), as 
     * Requires that you understand the task very thoroughly.
     * Minor mistakes can cause big problems in unexpected ways (the recipe was supposed to make a cake but somehow the whole house filled with chloramine gas!?).
 
+* Kind of like what an Arduino is.
+  * Is a "wrapper" around a programmable microcontroller, normally used in electronics, e.g. to control a vending machine.
+  * The microcontroller is like the methodical chef without common sense, and the code that it is running is the recipe.
+  * Arduino enables programming that can easily affect and be affected by the real world.
+  * Would be useful for simple, repetitive tasks that need to be done at scale, e.g. taking regular measurements of moisture levels at different locations.
+
+* Tutorial: button that toggles an LED on or off.
+  * Busy loop that checks if the button has been pressed; if yes, toggle the light's state.
+  * Analogy: recipe that calls for a cook to find and stand next to a light switch, making sure that he could hear the doorbell (setup());   * wait until he hears a doorbell, then after which he'll flip a light switch. Repeat this until he dies (loop()).
+  * Write out some pseudocode for this, and actual code. Walk through an example of the cook executing each step of the program.
+  * Explain the "translation process" from the pseudocode to the regular code.
+  * Demonstrate with an example circuit + Sketch on the Autodesk Circuit simulator.
+  * Explain variables as being like whiteboards on which some value is written. bool is a tiny whiteboard only big enough to store "yes" or "no" (technically, "true" or "false"). int is a larger whiteboard that can store a number. char is a whiteboard that can fit a single letter. And so on.
+bool var; var = true; means to take the whiteboard named "var", erase its contents, and write a "true".
+  * Explain chained assignment, bool b1, b2, b3; b1 = b2 = b3 = true; as reading a value, writing it onto a whiteboard, and repeating for the next bool in sequence.
+* Explain if statements.
+* Explain the setup() and loop() functions.
 
